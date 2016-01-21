@@ -1,0 +1,21 @@
+{
+    "name": "xj/yii2-weui-widget",
+    "description": "yii2-weui-widget",
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "xjflyttp",
+            "email": "xjflyttp@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "bower-asset/weui": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "xj\\weui\\": ""
+        }
+    }
+}
