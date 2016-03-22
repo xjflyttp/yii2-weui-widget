@@ -67,12 +67,12 @@ EOF
 Button
 ---
 ```php
-Button::widget([
+\xj\weui\Button::widget([
     'label' => 'Action',
     'options' => [
         'class' => [
+            Button::BTN,
             Button::BTN_PRIMARY,
-            Button::BTN_MINI,
             Button::BTN_DISABLED
         ],
     ],
