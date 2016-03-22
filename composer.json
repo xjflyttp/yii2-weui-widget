@@ -11,7 +11,7 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require": {
-        "bower-asset/weui": "dev-master"
+        "bower-asset/weui": "~0.4.0"
     },
     "autoload": {
         "psr-4": {
