@@ -11,7 +11,5 @@ class WeuiAsset extends AssetBundle
 {
     public $sourcePath = '@bower/weui/dist';
     public $basePath = '@webroot/assets';
-    public $css = [
-        'style/weui.css',
-    ];
+    public $css = ['style/weui.css'];
 }
