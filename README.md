@@ -178,3 +178,12 @@ Toast
 ]);
 ```
 
+Icon
+---
+```php
+<?= \xj\weui\Html::icon([\xj\weui\Html::ICON_MSG, \xj\weui\Html::ICON_DOWNLOAD]); ?>
+<?= \xj\weui\Html::icon([\xj\weui\Html::ICON_SAFE, \xj\weui\Html::ICON_SAFE_SUCCESS]); ?>
+<?= \xj\weui\Html::icon(\xj\weui\Html::ICON_DOWNLOAD); ?>
+<?= \xj\weui\Html::icon(\xj\weui\Html::ICON_CANCEL); ?>
+<?= \xj\weui\Html::icon(\xj\weui\Html::ICON_INFO); ?>
+```
