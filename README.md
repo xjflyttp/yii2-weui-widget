@@ -132,6 +132,7 @@ Msg Page
 ---
 ```php
 \xj\weui\MsgPage::widget([
+    'iconClass' => 'weui_icon_success',
     'title' => 'myTitle',
     'desc' => 'myDesc',
     'extra' => \yii\helpers\Html::a('More', ['index']),
