@@ -1,6 +1,8 @@
 <?php
 namespace xj\weui;
 
+use yii\helpers\Url;
+
 /**
  *
  * @author xjflyttp <xjflyttp@gmail.com>
@@ -30,7 +32,7 @@ class Button extends Widget
     /**
      * @var string the tag to use to render the button
      */
-    public $tagName = 'button';
+    public $tagName;
     /**
      * @var string the button label
      */
@@ -41,12 +43,26 @@ class Button extends Widget
     public $encodeLabel = true;
 
     /**
+     * @var string
+     */
+    public $url;
+
+    /**
      * Initializes the widget.
      * If you override this method, make sure you call the parent implementation first.
      */
     public function init()
     {
         parent::init();
+        if (null !== $this->url) {
+            $this->url = Url::to($this->url);
+        }
+        if (null === $this->tagName) {
+            $this->tagName = (null === $this->url) ? 'button' : 'a';
+        }
+        if ($this->url && $this->tagName === 'a') {
+            $this->options['href'] = $this->url;
+        }
     }
 
     /**
@@ -54,6 +70,8 @@ class Button extends Widget
      */
     public function run()
     {
-        return Html::tag($this->tagName, $this->encodeLabel ? Html::encode($this->label) : $this->label, $this->options);
+        return Html::tag($this->tagName, $this->encodeLabel ?
+            Html::encode($this->label) :
+            $this->label, $this->options);
     }
 }
