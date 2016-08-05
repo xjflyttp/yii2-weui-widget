@@ -6,7 +6,7 @@ composer.json
 ---
 ```json
 "require": {
-    "xj/yii2-weui-widget": "dev-master"
+    "xj/yii2-weui-widget": "~1.0.0"
 },
 ```
 Assets
